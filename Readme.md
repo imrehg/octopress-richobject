@@ -12,7 +12,11 @@ This mostly means adding extra meta tags and other things.
 Documentation
 =============
 
-*Coming later.*
+Add `richobject.html` to `source/_includes/custom`, and edit `source/_includes/head.html` to add this line
+just before the closing `</head>` tag:
+
+    {% include custom/richobject.html %}
+
 
 Testing tools
 =============
