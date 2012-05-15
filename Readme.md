@@ -17,6 +17,13 @@ just before the closing `</head>` tag:
 
     {% include custom/richobject.html %}
 
+To have correctly filled out fields, add these new properties to every new post you make (for description
+and cover image URL):
+
+    description:
+    cover:
+
+Also, in `_config.yaml` fill out the `description:`, and add a `cover:` property.
 
 Testing tools
 =============
