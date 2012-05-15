@@ -2,8 +2,14 @@
 <meta property="og:type" content="website" />
 {% if page.title %}
 <meta property="og:title" value="{{ page.title }}">
-<meta property="og:description" value="">
+<meta property="og:description" value="{{ page.description }}">
+ {% if page.cover %}
+<meta property="og:image" value="{{ site.url }}{{ page.cover }}">
+ {% endif %}
 {% else %}
 <meta property="og:title" value="{{ site.title }}">
 <meta property="og:description" value="{{ site.description }}">
+ {% if site.cover %}
+<meta property="og:image" value="{{ site.url }}{{ site.cover }}">
+ {% endif %}
 {% endif %}
