@@ -1,0 +1,9 @@
+<meta property="og:url" value="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="website" />
+{% if page.title %}
+<meta property="og:title" value="{{ page.title }}">
+<meta property="og:description" value="">
+{% else %}
+<meta property="og:title" value="{{ site.title }}">
+<meta property="og:description" value="{{ site.description }}">
+{% endif %}
